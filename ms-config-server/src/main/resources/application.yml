@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: /Users/mlange/dev/microservices/ms-config-properties/{application}/{profile}
+        git:
+          uri: https://github.com/microservices/
+          search-paths:
+            - "ms-config-properties/{application}/{profile}"
